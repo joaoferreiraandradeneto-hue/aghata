@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para você, Ágatha</title>
+    <style>
+        body {
+            background: #ffe6f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 3em;
+        }
+        p {
+            color: #333;
+            font-size: 1.5em;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: red;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 0% 35%);
+            animation: float 6s infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-20px) translateX(10px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0) translateX(0);
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Para você, Ágatha! o meu bem mais precioso</h1>
+    <img src="aghata.jpeg" alt="Ágatha">
+    <p>com todo o amor(joão).</p>Desde o ano passado, quando te conheci, meu coração ficou suspenso entre o medo e a esperança. Quando falei com a Samily, vi que parecia um sonho distante, você estava com alguém. E por um tempo, me guardei, admirei de longe. Mas quando vi que as coisas tinham mudado, meu coração se abriu de novo. E, naquele dia, quando você me seguiu, meu sorriso não cabia no rosto. Desde então, a gente tem se descoberto, conversado, e cada momento só me faz querer mais. Somos tão parecidos, temos o mesmo humor, os mesmos sonhos. E, mesmo nas nossas briguinhas bobas, eu sei que a gente vai superar, porque o que sinto por você é verdadeiro. E eu queria te dizer que, com todo o carinho do mundo, eu quero construir algo lindo com você.
+EU TE AMO ÁGHATA! 💙✨
+    <div class="hearts">
+        <!-- Vários corações, posicionados randomicamente -->
+        <div class="heart" style="top: 20%; left: 10%;"></div>
+        <div class="heart" style="top: 50%; left: 30%;"></div>
+        <div class="heart" style="top: 70%; left: 60%;"></div>
+        <div class="heart" style="top: 30%; left: 80%;"></div>
+        <div class="heart" style="top: 80%; left: 20%;"></div>
+        <!-- Você pode adicionar mais corações duplicando o div .heart com posições diferentes -->
+    </div>
+</body>
+</html>
